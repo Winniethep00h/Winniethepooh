@@ -1,0 +1,287 @@
+body {
+  font-family: arial;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20;
+  padding: 20px;
+  background-color: #fff78a;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+h3 {
+  margin-top: 20xpx;
+}
+
+.main-content {
+  flex: 2;
+}
+
+nav {
+  background-color: #000000;
+  padding: 10px 20px;
+  font-family: arial;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none; 
+  color: #000;
+  font-weight: bold;
+  padding: 8px 5px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f7df2c;
+  border-radius: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+li {
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+}
+
+aside {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+aside h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+aside li {
+  margin-bottom: 5px;
+}
+
+aside a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+header h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.login-box {
+  width: 300px;
+  background: #fff9f0;
+  padding: 30px 300px 25px 100px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: left;
+  color: #444;
+  margin: 30px 20px 20px 100px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 40px;
+  padding-left: 200px;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 500px;
+  padding: 20px;
+  border: 2px solid #ffd77d;
+  border-radius: 10px;
+  background-color: #fffbea;
+  margin-bottom: 40px;
+  margin-right: 2000px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+  border-color: #f9a825;
+  background-color: #fff5d7;
+  outline: none;
+}
+
+.login-box input[type="submit"],
+.login-box button {
+  width: 500px;
+  font-size: 20px;
+  background-color: #fbc02d;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box input[type="submit"]:hover,
+.login-box button:hover {
+  background-color: #000000;
+}
+
+.login-box a {
+  color: #7b1fa2;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  padding-left: 100px;
+}
+
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.main-content {
+  flex: 3;
+  padding-right: 20px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 30%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+  .main-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  @media(max-width: 480px) {
+    body {
+      margin: 10px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+    
+    h2 {
+      font-size: 1.2em;
+    }
+  }

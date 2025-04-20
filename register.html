@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Registrasi</title>
+  <link rel="stylesheet" href="styleregis.css">
+</head>
+<body>
+  <header style="background-color: #ffcc00; padding: 5px; text-align: center;">
+    <h1>Halaman Beranda</h1>
+</header>
+
+<nav style="background-color: #faf884; padding: 10px;">
+    <ul style="list-style-type: none; margin: 0; padding: 0;">
+        <li style="display: inline; margin-right: 10px;"><a href="index.html">Beranda</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="biodata.html">Biodata</a></li>
+         <li style="display: inline; margin-right: 10px;"><a href="kontak.html">Kontak</a></li>
+         <li style="display: inline; margin-right: 10px;"><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<img src="z2.jpg" width="1240px" height="400px" style="margin-top: 10px;">
+  <div class="container">
+    <div class="form-container">
+      <h2>Registrasi</h2>
+      <form id="registerForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tanggal">Tanggal Lahir:</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="jk" value="Laki-laki" required> Laki-laki</label>
+          <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+        </div>
+
+        <label for="agama">Agama:</label>
+        <select id="agama" name="agama" required>
+          <option value="">-- Pilih Agama --</option>
+          <option>Islam</option>
+          <option>Kristen</option>
+          <option>Katolik</option>
+          <option>Hindu</option>
+          <option>Buddha</option>
+          <option>Lainnya</option>
+        </select>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="bio">Biografi:</label>
+        <textarea id="bio" name="bio" rows="3"></textarea>
+
+        <button type="submit">Daftar</button>
+      </form>
+    </div>
+    <div class="sidebar">
+      <h3>Alternatif Link</h3>
+      <p>Ini adalah sidebar dengan alternatif link:</p>
+      <ul>
+        <li><a href="#">Website Universitas</a></li>
+        <li><a href="#">Website Fakultas</a></li>
+        <li><a href="#">Website Prodi</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = {
+        nama: form.nama.value,
+        username: form.username.value,
+        email: form.email.value,
+        tanggal: form.tanggal.value,
+        jk: form.jk.value,
+        agama: form.agama.value,
+        bio: form.bio.value
+      };
+      alert(
+        Konfirmasi Registrasi:\n +
+        Nama: ${data.nama}\nUsername: ${data.username}\nEmail: ${data.email}\n +
+        Tanggal Lahir: ${data.tanggal}\nJenis Kelamin: ${data.jk}\n +
+        Agama: ${data.agama}\nBiografi: ${data.bio}
+      );
+    });
+  </script>
+
+<footer style="background-color: #fbffb39b; padding: 5px; text-align: center;">
+  <p>&copy; 2025 Winy Lakburlawal. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
